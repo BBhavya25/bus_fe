@@ -1,0 +1,270 @@
+/* Global Styles for All Pages */
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.book-ticket-page  h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #0a0a0a;
+}
+.get-ticket-page  h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #0a0a0a;
+} 
+.delete-ticket-page  h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #0a0a0a;
+}
+
+.update-ticket-page h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #0a0a0a;
+  }
+
+
+/* Scoped Styles for BookTicket Page */
+.book-ticket-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.book-ticket-page form {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px #515050(250, 247, 247, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.book-ticket-page input {
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 5px;
+  width: 550px;
+  border: 1px solid #efe7e7;
+  font-size: 1rem;
+}
+
+.book-ticket-page button {
+  padding: 12px;
+  background-color: #937e14;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-ticket-page button:hover {
+  background-color: #80940e;
+}
+
+/* Scoped Styles for GetTicket Page */
+.get-ticket-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.get-ticket-page .cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.get-ticket-page .card {
+  background-color: #e7bebe;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.get-ticket-page .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.get-ticket-page .card-header {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.get-ticket-page .card-body {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.get-ticket-page .card-footer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.get-ticket-page .card-footer button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Scoped Styles for UpdateTicket Page */
+.update-ticket-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.update-ticket-page form {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.update-ticket-page input {
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 5px;
+  width: 550px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.update-ticket-page button {
+  padding: 12px;
+  background-color: #ffc107;
+  border: none;
+  color: white;
+  width: 50%;
+  text-align: center;
+  margin-left: 140px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.update-ticket-page button:hover {
+  background-color: #e0a800;
+}
+
+/* Scoped Styles for DeleteTicket Page */
+.delete-ticket-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.delete-ticket-page button {
+  padding: 12px;
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-ticket-page button:hover {
+  background-color: #c82333;
+}
+
+/* Loader Styles */
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 30px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .book-ticket-page, .get-ticket-page, .update-ticket-page, .delete-ticket-page {
+    padding: 15px;
+    margin-top: 30px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .book-ticket-page form, .update-ticket-page form {
+    padding: 15px;
+  }
+
+  .get-ticket-page .cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 15px;
+  }
+
+  form input {
+    font-size: 0.9rem;
+  }
+
+  form button {
+    font-size: 0.9rem;
+  }
+}
+
+
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
